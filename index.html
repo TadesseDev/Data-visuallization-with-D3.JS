@@ -8,9 +8,15 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div>
+        <p>First paragraph.</p>
+        <p>Second paragraph.</p>
+      </div>
+    </div>
+    <p></p>
     <script>
-      d3.select("#root").text("Hello World");
+      d3.select("div").select("p").remove()
     </script>
   </body>
 </html>
