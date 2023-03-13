@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://d3js.org/d3.v7.min.js"></script>
+    <style>
+    .error {
+        color: red
+    }
+</style>
     <title>Document</title>
   </head>
   <body>
@@ -14,9 +19,11 @@
         <p>Second paragraph.</p>
       </div>
     </div>
-    <p></p>
+    <p>D3</label><input type="checkbox" />
+<p>jQuery</label><input type="checkbox" />
     <script>
-      d3.select("div").select("p").html("<h2> insert h2 element inside p element </h2>")
+      d3.select("div").select("p").html("<h2> insert h2 element inside p element </h2>").classed("error", true)
+      d3.select("input").property("checked", true)
     </script>
   </body>
 </html>
